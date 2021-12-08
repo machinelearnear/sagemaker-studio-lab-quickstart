@@ -1,0 +1,13 @@
+# To use:
+#   $ conda env create -f environment.yml
+#   $ conda activate demo
+name: sagemaker-lab-quickstart
+dependencies:
+  - python=3.9
+  - pip
+  - nb_conda_kernels
+  - ipykernel
+  - pip:
+    - torch
+    - timm
+    - scipy
