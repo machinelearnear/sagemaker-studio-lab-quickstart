@@ -1,13 +1,24 @@
 # To use:
 #   $ conda env create -f environment.yml
 #   $ conda activate demo
-name: sagemaker-lab-quickstart
+name: machinelearnear-asr-spanish
 dependencies:
   - python=3.9
   - pip
   - nb_conda_kernels
   - ipykernel
+  - gh
+  - librosa
+  - ffmpeg
   - pip:
     - torch
-    - timm
+    - transformers
+    - torchaudio
+    - pyctcdecode
+    - https://github.com/kpu/kenlm/archive/master.zip
+    - nltk
+    - soundfile
+    - youtube-dl
     - scipy
+    - ffmpeg-python
+    # - -r file:requirements.txt
